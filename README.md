@@ -1,1 +1,1 @@
-# Password-Strength-Generator
+# Strong-Password-Generator
