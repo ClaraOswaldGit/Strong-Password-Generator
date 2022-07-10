@@ -16,17 +16,17 @@ def passGen():
     password_length = int(input('Enter the length of the password: '))
     while True: 
         ## Set the minimum password length to 12 characters
-        if password_length <= 11:
-            ### Under 12 characters error message
-            print('Strong passwords must be at least 12 characters long.')
-            ### Prompt user to enter a higher lenght
-            passGen()
-            break
-        else:
+        if password_length >= 12:
             # Generate the password
             password = "".join(random.sample(characters, password_length))
             # Print the generated password
             print("Gernerated password: %s" %password)
+            break
+        else:            
+            ### Under 12 characters error message
+            print('Strong passwords must be at least 12 characters long.')
+            ### Prompt user to enter a higher lenght
+            passGen()
             break
 
 passGen()
