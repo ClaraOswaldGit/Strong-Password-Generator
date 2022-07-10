@@ -20,7 +20,8 @@ def passGen():
             ### Under 12 characters error message
             print('Strong passwords must be at least 12 characters long.')
             ### Prompt user to enter a higher lenght
-            password_length = int(input('Enter a higher length: '))
+            passGen()
+            break
         else:
             # Generate the password
             password = "".join(random.sample(characters, password_length))
@@ -29,5 +30,3 @@ def passGen():
             break
 
 passGen()
-
-
