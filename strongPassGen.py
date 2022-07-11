@@ -25,7 +25,7 @@ def passGen():
         else:            
             ### Under 12 characters error message
             print('Strong passwords must be at least 12 characters long.')
-            ### Prompt user to enter a higher lenght
+            ### Repeat function to allow user to enter a higher length
             passGen()
             break
 
